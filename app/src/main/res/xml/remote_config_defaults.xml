@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>show_top_native_ad</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>show_list_native_ads</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>ads_list_freq</key>
+        <value>10</value>
+    </entry>
+    <entry>
+        <key>show_fullscreen_ad_enter</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>show_fullscreen_ad_download</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>show_fullscreen_ad_exit</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>MY_DP_URL</key>
+        <value>https://lh5.googleusercontent.com/-cfOb24BeYUs/AAAAAAAAAAI/AAAAAAAAE_Q/6a9Niy9k3bk/s96-c/photo.jpg</value>
+    </entry>
+
+    <entry>
+        <key>SID_DP_URL</key>
+        <value>https://lh3.googleusercontent.com/Hru09JUStMeo2qT4d61MCpHVaj4bd1jxWd77pybZPfrA_QDBsqeYtBMpExD11Q_17303eJ9HFYvfUA=w2880-h1620-rw-no</value>
+    </entry>
+
+    <entry>
+        <key>SID_SHOW</key>
+        <value>false</value>
+    </entry>
+
+
+
+
+</defaultsMap>

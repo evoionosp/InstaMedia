@@ -1,0 +1,80 @@
+{
+  "project_info": {
+    "project_number": "118644302025",
+    "firebase_url": "https://instamedia-fa6a6.firebaseio.com",
+    "project_id": "instamedia-fa6a6",
+    "storage_bucket": "instamedia-fa6a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118644302025:android:1e3794f51a637083",
+        "android_client_info": {
+          "package_name": "com.developer.devshubhpatel.instamedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118644302025-fneqhvjh2glvvppmon7at37s0stt5eao.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.developer.devshubhpatel.instamedia",
+            "certificate_hash": "0474a7894db9306aabd6ebc032c17b8d4db60c8a"
+          }
+        },
+        {
+          "client_id": "118644302025-h12ml8ugkoet0gcp898d9ausb9hs00j0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.developer.devshubhpatel.instamedia",
+            "certificate_hash": "4f02aa3f3413c6f694e4d0307cd47952d600aa90"
+          }
+        },
+        {
+          "client_id": "118644302025-s17i5a5hcf8sln0r8nbd4pejul6sn8iq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.developer.devshubhpatel.instamedia",
+            "certificate_hash": "05125b755b154b7855cdc50e5da986ca79aa838c"
+          }
+        },
+        {
+          "client_id": "118644302025-18dpdvu41qfhtqecia4s7ugv0j2bp40n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.developer.devshubhpatel.instamedia",
+            "certificate_hash": "92325deeb1743766902137e744fb11983e37bb1d"
+          }
+        },
+        {
+          "client_id": "118644302025-jlqpth71ih05ja451c7ss1t4urdhdfau.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAbjzSA5T_LU3CwaHWwp-1QeHQKLQ6DXs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118644302025-jlqpth71ih05ja451c7ss1t4urdhdfau.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-3746797233831787~9931096157"
+    }
+  ],
+  "configuration_version": "1"
+}
