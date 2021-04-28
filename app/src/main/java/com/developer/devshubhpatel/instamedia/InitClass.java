@@ -1,20 +1,18 @@
 package com.developer.devshubhpatel.instamedia;
 
-import android.app.ActivityManager;
 import android.app.Application;
 import android.content.ClipData;
 import android.content.ClipDescription;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.ContextWrapper;
-import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.net.Uri;
-import android.support.annotation.NonNull;
-import android.support.annotation.StringDef;
-import android.support.design.widget.Snackbar;
-import android.support.multidex.MultiDex;
+
+import androidx.annotation.NonNull;
+
+import com.google.android.material.snackbar.Snackbar;
+import androidx.multidex.MultiDex;
 import android.util.Log;
 import android.view.View;
 
@@ -23,8 +21,6 @@ import com.developer.devshubhpatel.instamedia.models.IMedia;
 import com.developer.devshubhpatel.instamedia.models.Node;
 import com.developer.devshubhpatel.instamedia.utils.Constant;
 import com.developer.devshubhpatel.instamedia.utils.RetrofitInterface;
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -36,7 +32,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
 import com.pixplicity.easyprefs.library.Prefs;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -47,8 +42,6 @@ import retrofit2.Callback;
 import retrofit2.GsonConverterFactory;
 import retrofit2.Response;
 import retrofit2.Retrofit;
-
-import static com.developer.devshubhpatel.instamedia.MainActivity.showSnackbar;
 
 
 /**

@@ -1,13 +1,16 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion '28.0.2'
+    compileSdkVersion 30
+    buildToolsVersion '30.0.3'
 
     defaultConfig {
         applicationId "com.developer.devshubhpatel.instamedia"
         minSdkVersion 16
-        targetSdkVersion 28
+        targetSdkVersion 30
         versionCode 11
         versionName "1.1.2"
         multiDexEnabled true
@@ -22,41 +25,66 @@ android {
     }
 
 }
-ext {
-    SupportV = "28.+"
-    firebaseV = "11.0.1"
-    firebaseUiV = "1.2.0"
-}
+//ext {
+//    SupportV = "28.+"
+//    firebaseV = "11.0.1"
+//    firebaseUiV = "1.2.0"
+//}
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation "com.android.support:appcompat-v7:$SupportV"
-    implementation "com.android.support:customtabs:$SupportV"
-    implementation "com.android.support:support-v4:$SupportV"
-    implementation "com.android.support:support-v13:$SupportV"
-    implementation "com.android.support:design:$SupportV"
-    implementation "com.android.support:cardview-v7:$SupportV"
-    implementation "com.android.support:recyclerview-v7:$SupportV"
-    implementation "com.google.firebase:firebase-core:16.0.3"
-    implementation "com.google.firebase:firebase-auth:16.0.3"
-    implementation "com.google.firebase:firebase-config:16.0.0"
-    implementation "com.google.firebase:firebase-ads:15.0.1"
-    implementation "com.google.firebase:firebase-messaging:17.3.2"
-    implementation "com.google.android.gms:play-services-auth:16.0.0"
-    implementation "com.google.firebase:firebase-database:16.0.2"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    //Google GSON
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    //Material UI
+    implementation 'com.google.android.material:material:1.3.0'
+
+    //Dialogs
+    implementation 'com.afollestad.material-dialogs:core:3.3.0'
+    implementation 'com.afollestad.material-dialogs:input:3.3.0'
+    implementation 'com.afollestad.material-dialogs:bottomsheets:3.3.0'
+
+    //firebase
+    implementation "com.google.firebase:firebase-core:18.0.3"
+    implementation "com.google.firebase:firebase-auth:20.0.4"
+    implementation "com.google.firebase:firebase-config:20.0.4"
+    implementation "com.google.firebase:firebase-ads:20.0.0"
+    implementation "com.google.firebase:firebase-messaging:21.1.0"
+    implementation "com.google.android.gms:play-services-auth:19.0.0"
+    implementation "com.google.firebase:firebase-database:19.7.0"
+    implementation 'com.google.android.gms:play-services-ads:20.0.0'
+
+    //picasso
     implementation 'com.squareup.picasso:picasso:2.5.2'
-    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.0.0-beta3'
+
+    //Retrofit, okHttp and GSON
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.7.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.7.2'
+
     implementation 'com.github.paolorotolo:appintro:4.1.0'
     implementation 'com.afollestad:easyvideoplayer:0.3.0'
     implementation 'uk.co.samuelwall:material-tap-target-prompt:1.10.0'
-    implementation 'com.pixplicity.easyprefs:library:1.8.1@aar'
+    implementation 'com.pixplicity.easyprefs:library:1.9.0'
     implementation 'pub.devrel:easypermissions:0.3.1'
-    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'de.hdodenhof:circleimageview:2.1.0'
-    implementation 'com.afollestad.material-dialogs:core:0.9.4.4'
+    implementation 'com.afollestad.material-dialogs:core:3.3.0'
 
-    testImplementation 'junit:junit:4.12'
+    //anko
+    implementation "org.jetbrains.anko:anko-commons:0.10.8"
+    implementation "org.jetbrains.anko:anko-design:0.10.8"
+
+    testImplementation 'junit:junit:4.13.1'
 }
 apply plugin: 'com.google.gms.google-services'
 

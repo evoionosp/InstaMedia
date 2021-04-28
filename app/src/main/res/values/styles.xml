@@ -3,7 +3,7 @@
 
     </style>
 
-    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="MyMaterialTheme.Base" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -12,7 +12,7 @@
     </style>
 
 
-    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+    <style name="AppBaseTheme" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
     </style>
 
     <!-- Base application theme. -->
@@ -24,7 +24,7 @@
 
     </style>
 
-    <style name="VideoPlayerTheme" parent="Theme.AppCompat.NoActionBar">
+    <style name="VideoPlayerTheme" parent="Theme.MaterialComponents.NoActionBar">
 
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>

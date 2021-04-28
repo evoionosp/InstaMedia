@@ -1,11 +1,8 @@
 package com.developer.devshubhpatel.instamedia;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
@@ -13,12 +10,11 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
 
-import android.provider.MediaStore;
-import android.support.annotation.NonNull;
-import android.support.design.widget.Snackbar;
-import android.support.v4.content.LocalBroadcastManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.RecyclerView.ViewHolder;
+import androidx.annotation.NonNull;
+import com.google.android.material.snackbar.Snackbar;
+
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,12 +29,8 @@ import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 
 import com.developer.devshubhpatel.instamedia.models.FMedia;
-import com.developer.devshubhpatel.instamedia.utils.Download;
 import com.developer.devshubhpatel.instamedia.utils.DownloadService;
-import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
-import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.NativeExpressAdView;
 import com.google.android.gms.ads.formats.NativeAdView;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -57,13 +49,11 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 import static android.content.ContentValues.TAG;
 import static com.developer.devshubhpatel.instamedia.InitClass.mDatabaseRef;
-import static com.developer.devshubhpatel.instamedia.InitClass.mFirebaseRemoteConfig;
 import static com.developer.devshubhpatel.instamedia.InitClass.performClipBoardCheck;
 import static com.developer.devshubhpatel.instamedia.MainActivity.cbm;
 import static com.developer.devshubhpatel.instamedia.MainActivity.checkPermission;
 import static com.developer.devshubhpatel.instamedia.MainActivity.showSnackbar;
 import static com.developer.devshubhpatel.instamedia.MainActivity.showToast;
-import static com.developer.devshubhpatel.instamedia.utils.Constant.MESSAGE_PROGRESS;
 import static com.developer.devshubhpatel.instamedia.utils.Constant.SAVE_DIR;
 import static com.developer.devshubhpatel.instamedia.utils.Constant.TEMP_DIR;
 

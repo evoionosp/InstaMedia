@@ -1,14 +1,12 @@
 package com.developer.devshubhpatel.instamedia;
 
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
 import com.afollestad.easyvideoplayer.EasyVideoCallback;
 import com.afollestad.easyvideoplayer.EasyVideoPlayer;
-
-import java.io.File;
 
 public class PlayerActivity extends AppCompatActivity implements EasyVideoCallback {
 

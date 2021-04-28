@@ -5,11 +5,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.SwitchCompat;
+import androidx.annotation.NonNull;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.fragment.app.Fragment;
+import androidx.cardview.widget.CardView;
+import androidx.appcompat.widget.SwitchCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +17,6 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
@@ -27,7 +26,6 @@ import com.developer.devshubhpatel.instamedia.IntroActivity;
 import com.developer.devshubhpatel.instamedia.R;
 import com.developer.devshubhpatel.instamedia.SignInActivity;
 import com.developer.devshubhpatel.instamedia.utils.ClipboardService;
-import com.developer.devshubhpatel.instamedia.utils.Constant;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseUser;
@@ -42,7 +40,6 @@ import static com.developer.devshubhpatel.instamedia.InitClass.mAuth;
 import static com.developer.devshubhpatel.instamedia.InitClass.mDatabaseRef;
 
 import static com.developer.devshubhpatel.instamedia.MainActivity.showSnackbar;
-import static com.developer.devshubhpatel.instamedia.MainActivity.showToast;
 import static com.developer.devshubhpatel.instamedia.utils.Constant.SHOW_NOTIFICATION;
 
 

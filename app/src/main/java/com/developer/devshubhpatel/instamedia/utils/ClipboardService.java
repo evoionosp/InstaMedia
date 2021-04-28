@@ -1,8 +1,6 @@
 package com.developer.devshubhpatel.instamedia.utils;
 
 
-import android.app.Activity;
-import android.app.ActivityManager;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -10,20 +8,17 @@ import android.app.Service;
 import android.content.ClipData;
 import android.content.ClipDescription;
 import android.content.ClipboardManager;
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.os.IBinder;
-import android.support.annotation.IntDef;
-import android.support.v4.app.NotificationCompat;
+
+import androidx.core.app.NotificationCompat;
 import android.util.Log;
 
-import com.developer.devshubhpatel.instamedia.MainActivity;
 import com.developer.devshubhpatel.instamedia.R;
 import com.developer.devshubhpatel.instamedia.models.FMedia;
 import com.developer.devshubhpatel.instamedia.models.IMedia;
 import com.developer.devshubhpatel.instamedia.models.Node;
-import com.google.android.gms.ads.AdListener;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -38,7 +33,6 @@ import retrofit2.GsonConverterFactory;
 import retrofit2.Retrofit;
 
 import static com.developer.devshubhpatel.instamedia.InitClass.mDatabaseRef;
-import static com.developer.devshubhpatel.instamedia.InitClass.mFirebaseRemoteConfig;
 import static com.developer.devshubhpatel.instamedia.utils.Constant.SHOW_NOTIFICATION;
 
 public class ClipboardService extends Service {
